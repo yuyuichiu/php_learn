@@ -1,7 +1,7 @@
 <?php 
   // View cookies in dev tool > application > Cookie
   // setcookie(name, value, timeWhichExpires)
-  setcookie('name', 'Olaf', time() + 86400);
+  setCookie('name', 'Olaf', time() + 86400);
 
   if(isset($_COOKIE['name'])) {
     echo "Cookie value: " . $_COOKIE['name'] . "<br>";
