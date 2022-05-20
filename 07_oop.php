@@ -46,8 +46,7 @@
   // extended classes can overwrite methods, including the constructor.
   class Graduate extends Student {
     function __construct(string $name, string $major, int $gradYr) {
-      $this->name = $name;
-      $this->major = $major;
+      parent::__construct($name, $major);
       $this->gradYr = $gradYr;
     }
 
